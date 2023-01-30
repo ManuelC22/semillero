@@ -1,0 +1,22 @@
+<form class="calculator" id="calcular" [formGroup]="calculadoraForm" (ngSubmit)="respuesta()">
+    <div>
+    <label>Valor 1</label>
+    <input formControlName="number1" type="number" id="number1">
+</div>
+<div>
+    <label>Valor 2</label>
+    <input formControlName="number2" type="number" id="number2">
+</div>
+<div>
+    <label>Valor 3</label>
+    <input formControlName="number3" type="text" id="number3">
+</div>
+<div>
+    <label>Resultado</label>
+    <p >{{this.result}}</p>
+</div>
+<div>
+    <button type="submit" form="calcular">Calcular</button>
+    <button type="reset">Limpiar</button>
+</div>
+</form>

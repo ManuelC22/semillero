@@ -1,0 +1,29 @@
+
+
+@media (max-width: 600px) {
+    app-add-calculator{
+        position: absolute;
+        left: 5%;
+        margin: 5%;
+    }
+    
+    app-multiply-calculator{
+        position: absolute;
+        left: 25%;
+        margin: 5%;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    app-add-calculator{
+        position: absolute;
+        left: 5%;
+        margin: 5%;
+    }
+    
+    app-multiply-calculator{
+        position: absolute;
+        left: 5%;
+        margin: 25%;
+    }
+  }
