@@ -1,0 +1,8 @@
+<select [(ngModel)]="type1">
+    <option value="simple">simple</option>
+    <option value="full">full</option>
+</select>
+
+<div *ngFor="let product of products">
+    <app-card [myproduct]="product" typeTemplate="simple"></app-card>
+</div>

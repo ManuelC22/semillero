@@ -1,0 +1,57 @@
+<!-- <div [ngSwitch]="typeTemplate">
+    <
+    </div>
+    
+</div> -->
+
+<div [ngSwitch]="typeTemplate">
+    <div *ngSwitchCase='"full"'>
+        <div>
+            <label for="">Nombre de producto:</label>
+            <label for="">{{myproduct.name}}</label></div>
+        
+        <div>        <label for="">Precio:</label><label for="">{{myproduct.price | number }}</label></div>
+        
+        <div>
+            <label for="">Categoria:</label>
+            <label *ngIf="myproduct.type" for="">Producto</label></div>
+        
+        <div><p>{{myproduct.characteristic}}</p></div>
+</div>
+    <div *ngSwitchCase='"simple"'>
+        <div>
+            <label for="">Nombre de producto:</label>
+            <label for="">{{myproduct.name}}</label></div>
+    </div>
+</div>
+
+
+<!-- <div [ngPlural]="typeTemplate">
+    <ng-template ngPluralCase="=10">
+        <ng-container *ngTemplateOutlet="simple"></ng-container>
+    </ng-template>
+    <ng-template ngPluralCase="other">
+        <ng-container *ngTemplateOutlet="full"></ng-container>
+    </ng-template>
+</div> -->
+
+
+<!-- <ng-template #full>
+<div>
+    <label for="">Nombre de producto:</label>
+    <label for="">{{myproduct.name}}</label></div>
+
+<div>        <label for="">Precio:</label><label for="">{{myproduct.price | number }}</label></div>
+
+<div>
+    <label for="">Categoria:</label>
+    <label *ngIf="myproduct.type" for="">Producto</label></div>
+
+<div><p>{{myproduct.characteristic}}</p></div>
+</ng-template>
+
+<ng-template #simple>
+    <div>
+        <label for="">Nombre de producto:</label>
+        <label for="">{{myproduct.name}}</label></div>
+    </ng-template> -->

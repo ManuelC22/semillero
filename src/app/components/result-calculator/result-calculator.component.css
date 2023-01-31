@@ -1,0 +1,10 @@
+div{
+    border: 1px solid #000;
+    background-color: whitesmoke;
+    height: 45px;
+    font-size: 35px;
+    padding: 2px 5px;
+}
+.rojo{
+    background-color: red;
+}

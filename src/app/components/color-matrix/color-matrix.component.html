@@ -1,0 +1,31 @@
+<div>
+    <label>Cantidad de Colores:</label>
+    <input appElementFocus [(ngModel)]="arraysize" #ctrl="ngModel" type="number" value="{{arraysize}}" max="{{arraysize}}" >
+</div>
+<div [ngPlural]="arraysize">
+    <ng-template ngPluralCase="=10">
+        <ng-container *ngTemplateOutlet="case1"></ng-container>
+    </ng-template>
+    <ng-template ngPluralCase="=4">
+        <ng-container *ngTemplateOutlet="case2"></ng-container>
+    </ng-template>
+    <ng-template ngPluralCase="other">
+        <span  *ngFor="let color of colors">
+            <span [ngStyle]="{'background-color':color}">Color</span>
+        </span>
+    </ng-template>
+</div>
+
+<ng-template #case1>
+    <span  *ngFor="let color of colors">
+        <div [ngStyle]="{'background-color':color}">{{color}}</div>
+    </span>  
+    </ng-template>
+
+    <ng-template #case2>
+        <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
+        </ng-template>
+
+
+

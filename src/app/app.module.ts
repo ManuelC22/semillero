@@ -8,6 +8,11 @@ import { SubtractCalculatorComponent } from './components/subtract-calculator/su
 import { MultiplyCalculatorComponent } from './components/multiply-calculator/multiply-calculator.component';
 import { SplitCalculatorComponent } from './components/split-calculator/split-calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ResultCalculatorComponent } from './components/result-calculator/result-calculator.component';
+import { ColorMatrixComponent } from './components/color-matrix/color-matrix.component';
+import { ElementFocusDirective } from './directives/element-focus.directive';
+import { CardComponent } from './components/card/card.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddCalculatorComponent,
     SubtractCalculatorComponent,
     MultiplyCalculatorComponent,
-    SplitCalculatorComponent
+    SplitCalculatorComponent,
+    ResultCalculatorComponent,
+    ColorMatrixComponent,
+    ElementFocusDirective,
+    CardComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

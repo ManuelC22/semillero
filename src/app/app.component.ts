@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basicCalculator';
+  typeCalculator:number=1;
+
+
+  getValue() {
+    console.log(this.typeCalculator);
+  }
 }

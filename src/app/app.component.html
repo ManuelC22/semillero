@@ -1,2 +1,19 @@
-<app-add-calculator></app-add-calculator>
-<app-multiply-calculator></app-multiply-calculator>
+<p>Seleccionaste la calculadora: {{ typeCalculator }}</p>
+<select [(ngModel)]="typeCalculator">
+    <option value="1">Primero</option>
+    <option value="2">Segundo</option>
+    <option value="3">Tercero</option>
+    <option value="4">Cuarto</option>
+</select>
+
+<div [ngSwitch]="typeCalculator">
+    <app-add-calculator *ngSwitchCase='1'></app-add-calculator>
+    <app-multiply-calculator *ngSwitchCase='2'></app-multiply-calculator>
+    <app-split-calculator *ngSwitchCase='3'></app-split-calculator>
+    <app-subtract-calculator *ngSwitchCase='4'></app-subtract-calculator>
+</div>
+
+<div>
+    <app-color-matrix></app-color-matrix>
+</div>
+<!-- <app-products></app-products> -->

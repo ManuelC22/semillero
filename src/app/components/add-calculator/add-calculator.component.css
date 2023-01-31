@@ -1,0 +1,66 @@
+span{
+   font-style: normal;
+}
+span div{
+    text-align: center;
+    border: 1px solid #000;
+    float: left;
+    font-size: 50px;
+    padding: 5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin: 1px;
+    transition-duration: 0.8s;
+    transition-property: background-color cursor transform;
+ }
+
+ span div:hover{
+background-color: orangered;
+color: aliceblue;
+cursor: pointer;
+transform: rotate(360deg);
+ }
+span:nth-child(4n) div{
+    background-color: cornflowerblue;
+}
+span:nth-child(4n) div:hover{
+    background-color:orangered;
+    color: aliceblue;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0) scale(0);
+    }
+    10% {
+        transform: rotate(36deg) scale(0.1);
+    }
+    20% {
+        transform: rotate(72deg) scale(0.2);
+    }
+    30% {
+        transform: rotate(108deg) scale(0.3);
+    }
+    40% {
+        transform: rotate(144deg) scale(0.4);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.5);
+    }
+    60% {
+        transform: rotate(216deg) scale(0.6);
+    }
+    70% {
+        transform: rotate(252deg) scale(0.7);
+    }
+    80% {
+        transform: rotate(288deg) scale(0.8);
+    }
+    90% {
+        transform: rotate(324deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(0);
+    }
+}
